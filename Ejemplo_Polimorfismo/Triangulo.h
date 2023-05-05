@@ -10,7 +10,8 @@
 * Solo se clasifica según sus lados
 */
 
-class Triangulo : public Figura {
+
+    template<typename T> class Triangulo:Figura<T> {
     std::array<float, 3> angulos;
     std::array<float, 3> longLados;
 public:

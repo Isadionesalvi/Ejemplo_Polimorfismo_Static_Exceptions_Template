@@ -1,5 +1,5 @@
 #pragma once
-template<typename T> class Propiedad {
+template<typename T> class Propiedad {			//generalizacion de get y seters 
 	T variable;
 public:
 	T get();

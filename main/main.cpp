@@ -17,7 +17,7 @@
 using namespace std;
 
 int main() {
-	stack<Figura*> misFiguras;
+	stack<Figura<int>*> misFiguras;
 
 	misFiguras.push(new Cuadrado(4.56));
 	misFiguras.push(new Circulo(8.08));

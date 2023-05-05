@@ -2,13 +2,18 @@
 #include "Figura.h"
 #define PI 3.14
 
-class Circulo : public Figura {
-    const float radio;
+
+
+template<typename T> class Circulo:Figura<T> {
+
+	const float radio;
 public:
-    Circulo(float radio_);
-    ~Circulo();
-    float area();
-    float perimetro();
-    std::string to_string();
-    void imprimir();
+	Circulo(T radio_);
+	~Circulo();
+	float area();
+	float perimetro();
+	std::string to_string();
+	void imprimir();
 };
+
+
